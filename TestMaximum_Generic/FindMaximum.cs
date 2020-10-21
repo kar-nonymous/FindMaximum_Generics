@@ -49,4 +49,24 @@ namespace TestMaximum_Generic
             else
                 return thirdValue;
         }
+        /// <summary>
+        /// UC3: Finds maximum string value among three
+        /// </summary>
+        /// <param name="firstString">The first value.</param>
+        /// <param name="secondString">The second value.</param>
+        /// <param name="thirdString">The third value.</param>
+        /// <returns></returns>
+        public static string MaxStringtAmongThree(string firstString, string secondString, string thirdString)
+        {
+            Console.WriteLine("Maximum string among {0}, {1} and {2}: ", firstString, secondString, thirdString);
+            /// Checks if firstValue is great then both secondValue and thirdValue
+            if (firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) > 0)
+                return firstString;
+            /// Checks if secondValue is great then both firstValue and thirdValue
+            else if (secondString.CompareTo(firstString) > 0 && secondString.CompareTo(thirdString) > 0)
+                return secondString;
+            else
+                return thirdString;
+        }
+    }
 }

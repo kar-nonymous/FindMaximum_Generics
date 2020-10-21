@@ -15,6 +15,8 @@ namespace TestMaximum_Generic
             Console.WriteLine(FindMaximum.MaxIntegerAmongThree(10, 20, 30));
             /// UC 2 : Finds the max float value among three
             Console.WriteLine(FindMaximum.MaxFloatAmongThree(6.897, 7.085, 5.8789));
+            /// UC3: Finds the max string vlaue among three
+            Console.WriteLine(FindMaximum.MaxStringtAmongThree("Nolan", "SpielBerg", "Martin"));
         }
     }
 }
